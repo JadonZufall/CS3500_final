@@ -164,3 +164,6 @@ Hunter, Hamrick [Apr 23 2023]:
 
 Malachi, Anichka [Apr 23 2023]:
 	Fixed tour dates link in index
+	
+Cassidy, Norkett [Apr 23 2023]:
+	Added individual pages to script.js

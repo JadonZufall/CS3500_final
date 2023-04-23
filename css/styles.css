@@ -342,3 +342,7 @@ a:active {
         grid-row: 1;
     }
 }
+
+.auththing {
+    text-align: right;
+}

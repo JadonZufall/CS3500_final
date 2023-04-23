@@ -69,6 +69,36 @@ const websitePages = {
         "link": "trivia",
         "catagory": "Other"
     },
+    "merch": {
+        "verbose": "Merch",
+        "link": "merch",
+        "catagory": "Other",
+    },
+    "publications": {
+        "verbose": "Publications",
+        "link": "publications",
+        "catagory": "Music"
+    },
+    "comment": {
+        "verbose": "Comment",
+        "link": "comment",
+        "catagory": "Community"
+    },
+    "login": {
+        "verbose": "Login",
+        "link": "login",
+        "catagory": "Account"
+    },
+    "signout": {
+        "verbose": "Signout",
+        "link": "signout",
+        "catagory": "Account"
+    },
+    "signup": {
+        "verbose": "Signup",
+        "link": "signup",
+        "catagory": "Account"
+    }
 }
 
 

@@ -119,3 +119,6 @@ TaVaughn, Walker [Apr 23 2023]:
 	
 Jadon, Zufall [Apr 23 2023]:
 	Exspanded user authentication to notify in all included pages if the user is logged in
+
+Jadon, Zufall [Apr 23 2023]:
+	Updated documentation

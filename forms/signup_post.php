@@ -30,6 +30,7 @@ if ($stmt->num_rows > 0) {
 $stmt->close();
 
 // Generate a salt I probably never actually use because lazy and writing code fast.
+// Spoiler I dont use the salt (Probably insecure but it broke something if I have time ill fix it later)
 $salt = '_salt' . $username;
 $hash = password_hash($password, PASSWORD_DEFAULT);
 $stmt = $conn->prepare("INSERT INTO users (username, salt, hash) VALUES (?, ?, ?)");

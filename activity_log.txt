@@ -89,3 +89,13 @@ Jadon, Zufall [Apr 19 2023]:
 
 Jadon, Zufall [Apr 20 2023]:
 	Updated database and such
+	
+TaVaughn, Walker [Apr 23 2023]:
+	Added pages for 1989, early_life, career_beginnings, and present_day into static file
+	
+TaVaughn, Walker [Apr 23 2023]:
+	Added same pages to views file and added php file to reference the static file
+	
+TaVaughn, Walker [Apr 23 2023]:
+	Updated index.php to include the newly added pages
+	

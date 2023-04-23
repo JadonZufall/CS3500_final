@@ -1,9 +1,21 @@
 <?php
-// This file is whats references by default and routes everything else.
-
+/* 
+    Probably not the best way of doing this as putting it an array would be better
+    and there are overall much better ways of handling static pages but I am trying to
+    get this done quickly so it's basically just an if else block.
+*/
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 if ($uri == '/' or $uri == '/index') {
     require('views/index.php');
+}
+else if ($uri == '/login') {
+    require('views/login.php');
+}
+else if ($uri == '/signup') {
+    require('views/signup.php');
+}
+else if ($uri == '/comment') {
+    require('views/comment.php');
 }
 else if ($uri == '/about') {
     require('views/about.php');
@@ -19,9 +31,6 @@ else if ($uri == '/sources') {
 }
 else if ($uri == '/music') {
     require('views/music.php');
-}
-else if ($uri == '/comment') {
-    require('views/comment.php');
 }
 else if ($uri == '/awards') {
     require('views/awards.php');

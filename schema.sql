@@ -10,3 +10,10 @@ CREATE TABLE comments (
     commentText TEXT(500) NOT NULL,
     postDate DATETIME NOT NULL DEFAULT NOW()
 );
+
+CREATE TABLE users (
+    userID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username CHAR(32) NOT NULL UNIQUE,
+    salt CHAR(64) NOT NULL,
+    hash TEXT(500) NOT NULL,
+);

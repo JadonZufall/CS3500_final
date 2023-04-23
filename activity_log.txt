@@ -128,3 +128,6 @@ Jadon, Zufall [Apr 23 2023]:
 	
 Cassidy, Norkett [Apr 23 2023]:
 	Added a php form to taylorsversion.html
+
+Jadon, Zufall [Apr 23 2023]:
+	Fixed routing issue with taylorversion.html

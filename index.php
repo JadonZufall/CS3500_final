@@ -89,6 +89,9 @@ else if ($uri == '/publications') {
 else if ($uri == '/merch') {
     require('views/merch.php');
 }
+else if ($uri == '/thankyou') {
+    require('views/thankyou.php');
+}
 else {
     http_response_code(404);
     echo "404 Page not found";

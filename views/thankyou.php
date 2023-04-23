@@ -1,3 +1,3 @@
 <?php
 require('inc/header.inc');
-include('thankyou.html');
+include('static/thankyou.html');

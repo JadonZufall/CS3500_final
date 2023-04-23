@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movie_poster{
+    width: 260px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-right: 100px;
+    text-align: center;
+    display: inline;
+}
+
+.movie_poster img {
+    padding-bottom: 15px;
+}

@@ -118,16 +118,22 @@ TaVaughn, Walker [Apr 23 2023]:
 	Updated index.php to include the newly added pages
 	
 Jadon, Zufall [Apr 23 2023]:
-	Exspanded user authentication to notify in all included pages if the user is logged in
+	Exspanded user authentication to notify in all included pages if the user is logged in and
+	prompt the user if they would like to create an account with a link to the sign in page for
+	easier access.
 
 Jadon, Zufall [Apr 23 2023]:
-	Updated documentation
+	Updated documentation for certain topics on authentication and other features that I have
+	implemented but did not comment on before this point.
 
 Jadon, Zufall [Apr 23 2023]:
-	Hashing for user authentication
+	Hashing for user authentication and also the generation of a salt that can be added to the
+	password before hashing in order to help prevent dictionary decryption upon comprimised database.
+	If that were to occur.
 	
 Cassidy, Norkett [Apr 23 2023]:
 	Added a php form to taylorsversion.html
 
 Jadon, Zufall [Apr 23 2023]:
-	Fixed routing issue with taylorversion.html
+	Fixed routing issue with taylorversion.html and rerouted the form so that the files link Together
+	properly.

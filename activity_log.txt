@@ -89,6 +89,24 @@ Jadon, Zufall [Apr 19 2023]:
 
 Jadon, Zufall [Apr 20 2023]:
 	Updated database and such
+
+Jadon, Zufall [Apr 21 2023]:
+	Added pages that wernt added
+
+Jadon, Zufall [Apr 22 2023]:
+	Added authentication system
+
+Jadon, Zufall [Apr 23 2023]:
+	Corrected schema
+
+Jadon, Zufall [Apr 23 2023]:
+	Created comment system
+
+Jadon, Zufall [Apr 23 2023]:
+	Finished up and polished web forms
+
+Jadon, Zufall [Apr 23 2023]:
+	Corrected broken authentication and hashing
 	
 TaVaughn, Walker [Apr 23 2023]:
 	Added pages for 1989, early_life, career_beginnings, and present_day into static file

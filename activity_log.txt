@@ -93,6 +93,15 @@ Jadon, Zufall [Apr 20 2023]:
 Jadon, Zufall [Apr 21 2023]:
 	Added pages that wernt added
 
+Hunter, Hamrick [Apr 21 2023]:
+	Uploaded listen.html, acting.html, and previoustours.html
+
+Hunter, Hamrick [Apr 21 2023]:
+	Uploaded listen.php, acting.php, and previoustours.php
+
+Hunter, Hamrick [Apr 21 2023]:
+	Added listen.php, acting.php, and previoustours.php to index/navbar
+
 Jadon, Zufall [Apr 22 2023]:
 	Added authentication system
 
@@ -118,22 +127,28 @@ TaVaughn, Walker [Apr 23 2023]:
 	Updated index.php to include the newly added pages
 	
 Jadon, Zufall [Apr 23 2023]:
-	Exspanded user authentication to notify in all included pages if the user is logged in and
-	prompt the user if they would like to create an account with a link to the sign in page for
-	easier access.
+	Exspanded user authentication to notify in all included pages if the user is logged in
 
 Jadon, Zufall [Apr 23 2023]:
-	Updated documentation for certain topics on authentication and other features that I have
-	implemented but did not comment on before this point.
+	Updated documentation
 
 Jadon, Zufall [Apr 23 2023]:
-	Hashing for user authentication and also the generation of a salt that can be added to the
-	password before hashing in order to help prevent dictionary decryption upon comprimised database.
-	If that were to occur.
+	Hashing for user authentication
 	
 Cassidy, Norkett [Apr 23 2023]:
 	Added a php form to taylorsversion.html
 
 Jadon, Zufall [Apr 23 2023]:
-	Fixed routing issue with taylorversion.html and rerouted the form so that the files link Together
-	properly.
+	Fixed routing issue with taylorversion.html
+
+Hunter, Hamrick [Apr 23 2023]:
+	Uploaded quiz.html and quizresults.html
+
+Hunter, Hamrick [Apr 23 2023]:
+	Uploaded quiz.php and quizresults.php
+
+Hunter, Hamrick [Apr 23 2023]:
+	Added quiz.php to index/navbar
+
+Hunter, Hamrick [Apr 23 2023]:
+	Updated about.html to include new websites

@@ -68,6 +68,18 @@ else if ($uri == '/previoustours') {
 else if ($uri == '/quiz') {
     require('views/quiz.php');
 }
+else if ($uri == '/early_life') {
+    require('views/early_life.php');
+}
+else if ($uri == '/career_beginnings') {
+    require('views/career_beginnings.php');
+}
+else if ($uri == '/1989') {
+    require('views/1989.php');
+}
+else if ($uri == '/present_day') {
+    require('views/present_day.php');
+}
 else {
     http_response_code(404);
     echo "404 Page not found";

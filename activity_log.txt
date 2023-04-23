@@ -122,3 +122,6 @@ Jadon, Zufall [Apr 23 2023]:
 
 Jadon, Zufall [Apr 23 2023]:
 	Updated documentation
+
+Jadon, Zufall [Apr 23 2023]:
+	Hashing for user authentication

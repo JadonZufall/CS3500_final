@@ -1,7 +1,7 @@
 <?php
 include("../inc/dbconn.php");
 global $conn;
-
+session_start();
 // Validate form submission die if validation fails
 if (!isset($_POST["user"], $_POST["pass"])) {
     exit("Please fill out both username and password fields");
@@ -44,3 +44,15 @@ else {
     echo "Account successfully created.";
 }
 $stmt->close();
+
+$stmt = $conn->prepare("SELECT userID FROM users WHERE username=?");
+$stmt->bind_param("s", $username);
+$stmt->execute();
+mysqli_stmt_store_result($stmt);
+mysqli_stmt_bind_result($stmt, $id);
+mysqli_stmt_fetch($stmt);
+session_regenerate_id();
+$_SESSION['loggedin'] = TRUE;
+$_SESSION['name'] = $username;
+$_SESSION['id'] = $id;
+header('Location: /');

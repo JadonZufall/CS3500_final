@@ -27,7 +27,7 @@ if (password_verify($password, $hash)) {
     $_SESSION['loggedin'] = TRUE;
 	$_SESSION['name'] = $_POST['user'];
 	$_SESSION['id'] = $id;
-	echo 'Welcome ' . $_SESSION['name'] . '!';
+	header('Location: /');
 }
 else {
     echo "Error invalid password was provided in login.php POST request";

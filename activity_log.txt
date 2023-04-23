@@ -161,3 +161,6 @@ TaVaughn, Walker [Apr 23 2023]:
 
 Hunter, Hamrick [Apr 23 2023]:
 	Updated catalog.html to inlude new pages
+
+Malachi, Anichka [Apr 23 2023]:
+	Fixed tour dates link in index

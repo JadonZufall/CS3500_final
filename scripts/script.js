@@ -79,6 +79,26 @@ const websitePages = {
         "link": "publications",
         "catagory": "Music"
     },
+    "listen": {
+        "verbose": "Listen",
+        "link": "listen",
+        "catagory": "Music"
+    },
+    "acting": {
+        "verbose": "Acting",
+        "link": "acting",
+        "catagory": "Other"
+    },
+    "previoustours": {
+        "verbose": "Previous Tours",
+        "link": "previoustours",
+        "catagory": "Other"
+    },
+    "quiz": {
+        "verbose": "Quiz",
+        "link": "quiz",
+        "catagory": "Other"
+    },
     "comment": {
         "verbose": "Comment",
         "link": "comment",

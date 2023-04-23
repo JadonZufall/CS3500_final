@@ -158,3 +158,6 @@ Cassidy, Norkett [Apr 23 2023]:
 	
 TaVaughn, Walker [Apr 23 2023]:
 	Updated scripts to show additional pages
+
+Hunter, Hamrick [Apr 23 2023]:
+	Updated catalog.html to inlude new pages

@@ -1,5 +1,5 @@
 <?php
-include_once("inc/dbconn.php");
+include("../inc/dbconn.php");
 global $conn;
 
 

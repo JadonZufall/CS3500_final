@@ -1,5 +1,8 @@
+<body>
 <?php
-if ($_SESSION['loggedin']) {
+session_start();
+
+if (isset($_SESSION['loggedin'])&& $_SESSION['loggedin']) {
     echo "Error, you are already logged in!";
     die("Error user already logged in");
 }
@@ -15,3 +18,5 @@ else {
     echo "Invalid Request Method";
     die("Invalid request method for login.php");
 }
+?>
+</body>

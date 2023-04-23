@@ -4,6 +4,10 @@ body {
     background-color: #171717;
 }
 
+input {
+    color: black;
+}
+
 h1, h2, h3 {
     font-family: Georgia, Cambria, "Times New Roman", cursive;
 }

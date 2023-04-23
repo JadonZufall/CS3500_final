@@ -19,4 +19,4 @@ if ($conn->connect_error) {
 }
 
 // Set global variable? might be doing this incorrectly.
-$GLOBALS['conn'] = conn;
+$GLOBALS['conn'] = $conn;

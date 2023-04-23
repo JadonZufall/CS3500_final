@@ -1,3 +1,4 @@
+<body>
 <?php
 if ($_SESSION['loggedin']) {
     echo "Error you are already logged in!";
@@ -15,3 +16,5 @@ else {
     echo "Invalid Request Method";
     die("Invalid request method for signup.php");
 }
+?>
+</body>

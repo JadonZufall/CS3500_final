@@ -117,3 +117,5 @@ TaVaughn, Walker [Apr 23 2023]:
 TaVaughn, Walker [Apr 23 2023]:
 	Updated index.php to include the newly added pages
 	
+Jadon, Zufall [Apr 23 2023]:
+	Exspanded user authentication to notify in all included pages if the user is logged in

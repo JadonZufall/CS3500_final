@@ -14,6 +14,9 @@ else if ($uri == '/login') {
 else if ($uri == '/signup') {
     require('views/signup.php');
 }
+else if ($uri == '/signout') {
+    require('views/signout.php');
+}
 else if ($uri == '/comment') {
     require('views/comment.php');
 }

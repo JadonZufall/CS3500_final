@@ -1,14 +1,13 @@
 <?php
-include_once("inc/dbconn.php");
+include("../inc/dbconn.php");
 global $conn;
 
 // Validate form submission die if validation fails
-$username = _POST["user"];
-$password = _POST["pass"];
-
 if (!isset($_POST["user"], $_POST["pass"])) {
     exit("Please fill out both username and password fields");
 }
+$username = $_POST["user"];
+$password = $_POST["pass"];
 
 // Validate string lengths
 if (strlen($username) > 32) {
@@ -25,17 +24,16 @@ else if (strlen($password) > 32) {
 $stmt = $conn->prepare("SELECT * FROM users WHERE username=?");
 $stmt->bind_param("s", $username);
 $stmt->execute();
-$stmt->bind_result($result);
 if ($stmt->num_rows > 0) {
     exit("Username has already been taken");
 }
 $stmt->close();
 
 // Generate a salt I probably never actually use because lazy and writing code fast.
-$salt = random_bytes(64);
+$salt = '_salt' . $username;
 $hash = password_hash($password, PASSWORD_DEFAULT);
 $stmt = $conn->prepare("INSERT INTO users (username, salt, hash) VALUES (?, ?, ?)");
-$stmt->bind_param("s", $username, $salt, $hash);
+$stmt->bind_param("sss", $username, $salt, $hash);
 $result = $stmt->execute();
 if ($result === FALSE) {
     // Query failure

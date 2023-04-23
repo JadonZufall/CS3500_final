@@ -2,29 +2,30 @@
 include("../inc/dbconn.php");
 global $conn;
 
-
+session_start();
 if (!isset($_POST["user"], $_POST["pass"])) {
     exit("Please fill out both username and password fields");
 }
-$password = $_POST["pass"];
 $username = $_POST["user"];
-$stmt = $conn->prepare('SELECT (id, user, hash, salt) FROM users WHERE user=?');
+$password = $_POST["pass"];
+$stmt = $conn->prepare('SELECT * FROM users WHERE username=?');
 if (!$stmt) {
-    echo "Error failed to prepare SQL statement in login.php POST request";
     die("Error failed to prepare SQL statement in login.php POST request");
 }
+$stmt->bind_param("s", $username);
 $stmt->execute();
-$stmt->store_result();
-if ($stmt->num_rows <= 0) {
-    echo "Error invalid username provided user does not exist in login.php POST request";
+mysqli_stmt_store_result($stmt);
+mysqli_stmt_bind_result($stmt, $id, $username, $salt, $hash);
+mysqli_stmt_fetch($stmt);
+if (mysqli_stmt_num_rows($stmt) <= 0) {
     die("Error invalid username provided user does not exist in login.php POST request");
 }
-$stmt->bind_result($db_id, $db_user, $db_hash, $db_salt);
-if (password_verify($password, $db_hash)) {
+
+if (password_verify($password, $hash)) {
     // Validation successful.
     session_regenerate_id();
     $_SESSION['loggedin'] = TRUE;
-	$_SESSION['name'] = $_POST['username'];
+	$_SESSION['name'] = $_POST['user'];
 	$_SESSION['id'] = $id;
 	echo 'Welcome ' . $_SESSION['name'] . '!';
 }

@@ -6,10 +6,11 @@
     using javascript likely.
 */
 ?>
-
+<div class="container">
 <h1>Register</h1>
-<form action="forms/register_post.php" method="post">
+<form action="forms/signup_post.php" method="post">
     <input type="text" name="user"></input><br>
     <input type="password" name="pass"></input><br>
     <input type="submit"><br>
 </form>
+</div>

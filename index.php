@@ -83,6 +83,12 @@ else if ($uri == '/1989') {
 else if ($uri == '/present_day') {
     require('views/present_day.php');
 }
+else if ($uri == '/publications') {
+    require('views/publications.php');
+}
+else if ($uri == '/merch') {
+    require('views/merch.php');
+}
 else {
     http_response_code(404);
     echo "404 Page not found";

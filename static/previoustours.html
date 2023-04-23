@@ -1,0 +1,131 @@
+    <head>
+        <title>Previous Tours</title>
+        <!-- Link previoustour.css -->
+        <link rel="stylesheet" href="../css/previoustours.css">
+    </head>
+    <body>
+        <!-- Page content -->
+        <div class="container">
+            <h1> Previous Tours </h1>
+            <div class="tour_name" id="fear">
+                <h2>Fearless Tour (2009-2010)</h2>
+                <img src="../images/pngwing.com.png"
+                     alt="See Info" title="See Info"
+                     class = "down"/>
+            </div>
+            <div class="tour" id="fear_tour">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Fearless_Tour_2009.png" 
+                     alt="Fearless Tour"/>
+                <div class="tour_info">
+                    <h3> Tour Information:</h3>
+                    <p> In the Fearless Tour, her first tour as a headlining act, Taylor Swift visited six contries 
+                    including the U.S., Canada, England, Austrialia, The Bahamas, and Japan, performing a total of 118 
+                    shows. The opening acts  for the majority of the tour were Gloriana and Kellie Pickler, but for two 
+                    shows in England and one in Foxborough, Justin Bieber opened. The total estimated attendance for 
+                    the tour was about 1.2 million, grossing approximately $66,500,000.</p>
+                </div>
+            </div>
+            <div class="tour_name" id="speak">
+                <h2>Speak Now World Tour (2011-2012)</h2>
+                <img src="../images/pngwing.com.png"
+                     alt="See Info" title="See Info"
+                     class = "down"/>
+            </div>
+            <div class="tour" id="speak_tour">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Taylor_Swift_-_Speak_Now_World_Tour_%28Poster%29.png" 
+                         alt="Speak Now World Tour"/>
+                <div class="tour_info">
+                    <h3> Tour Information:</h3>
+                    <p> Tylor Swift's second headlining tour was for her third album, 'Speak Now'. This tour included shows in many parts
+                    of the world including North America, Europe, Asia, and Oceania. The tour consisted of a total of 110 performances 
+                    featuring several different opening acts in Asia and Europe, while the North American shows were accompanied by 
+                    Needtobreathe, and the Oceania shows were accompanied by Hot Chelle Rae. Some shows of this tour also featured special
+                    guests such as Justin Bieber, Hayley Williams, Nicki Minaj, etc. Overall the tour had an estimated
+                    attendance od 1.64 million, and grossed approximately $123,700,000.</p>
+                </div>
+            </div>
+            <div class="tour_name" id="red">
+                <h2>The Red Tour (2013-2014)</h2>
+                <img src="../images/pngwing.com.png"
+                     alt="See Info" title="See Info"
+                     class = "down"/>
+            </div>
+            <div class="tour" id="red_tour">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/99/The_Red_Tour.png" 
+                     alt="The Red Tour"/>
+                <div class="tour_info">
+                    <h3> Tour Information:</h3>
+                    <p> Tylor Swift's third headlining tour was for her fourth studio album, 'Red'. The Red Tour largly retreaded 
+                    the same ground as her previous tour in visiting North America, Europe, Asia, and Oceania. The tour included 86 
+                    perfomances, most of which with Ed Sheeran opening. Notable speacial guest appearances include Ellie Goulding, 
+                    Luke Bryant, Rascal Flatts, Sam Smith, etc. The Red Tour also was nominated for several awards including
+                    'Top Package' from Billboard Live Music Awards which it won. The tour had an estimated
+                    attendance od 1.7 million, and grossed approximately $150,200,000.</p>
+                </div>
+            </div>
+            <div class="tour_name" id="1989">
+                <h2>The 1989 World Tour (2015)</h2>
+                <img src="../images/pngwing.com.png"
+                     alt="See Info" title="See Info"
+                     class = "down"/>
+            </div>
+            <div class="tour" id="1989_tour">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_1989_World_Tour.png" 
+                     alt="The 1989 Tour"/>
+                <div class="tour_info">
+                    <h3> Tour Information:</h3>
+                    <p> Tylor Swift's fourth headlining tour was for her fifth studio album, '1989'. The 1989 World Tour once again 
+                    returned to the same four regions as her previous tours, visiting North America, Europe, Asia, and Oceania. Over the 85 
+                    performances, Swift was joined by Vance Joy and Shawn Mendes for much of them. Other special guest include The Weeknd, 
+                    Nick Jonas, Lorde, Jason Derulo, etc. Like The Red Tour, The 1989 World Tour also recieived award nominations, and won 
+                    Best US Act from the MTV Europe Music Award, and Tour of the Year, and Best Tour from the iHeartRadio Music Awards. 
+                    The tour had an estimated attendance od 2.28 million, and grossed approximately $250,700,000.</p>
+                </div>
+            </div>
+            <div class="tour_name" id="rep">
+                <h2>Reputation Stadium Tour (2018)</h2>
+                <img src="../images/pngwing.com.png"
+                     alt="See Info" title="See Info"
+                     class = "down"/>
+            </div>
+            <div class="tour" id="rep_tour">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/Taylor_Swift%27s_Reputation_Stadium_tour.png" 
+                     alt="Reputation Stadium Tour"/>
+                <div class="tour_info">
+                    <h3> Tour Information:</h3>
+                    <p> Tylor Swift's fifth headlining tour was for her sixth studio album, 'Reputation'. Swift's Reputation Stadium Tour,  
+                    dispite making stops in the same regions as the ones before, had notable fewer performances with only 53. 
+                    For many of the 52 shows, she was joined by Camila Cabello and Charli XCX. There were also fewer special guest this tour 
+                    when compared to previous with notable ones being Selena Gomez, Tim McGraw, Bryan Adams, etc. Continuing the trend of
+                    previous two tours, Reputation Stadium Tour, was nominated for eleven awards, winning seven of them. 
+                    The tour had an estimated attendance od 2.939 million, and grossed approximately $345,700,000.</p>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/script.js"></script>
+        <script type=text/javascript>
+            $(function() {
+                $(".tour").hide();
+    
+                $("#fear").on("click", function (){
+                    $("#fear_tour").stop().slideToggle(300);
+                });
+                
+                $("#speak").on("click", function (){
+                    $("#speak_tour").stop().slideToggle(300);
+                });
+                
+                $("#red").on("click", function (){
+                    $("#red_tour").stop().slideToggle(300);
+                });
+                
+                $("#1989").on("click", function (){
+                    $("#1989_tour").stop().slideToggle(300);
+                });
+                
+                $("#rep").on("click", function (){
+                    $("#rep_tour").stop().slideToggle(300);
+                });
+            });
+        </script>
+    </body>

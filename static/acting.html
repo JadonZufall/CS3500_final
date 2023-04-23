@@ -1,0 +1,104 @@
+    <head>
+        <title>Acting</title>
+        <!-- Link acting.css -->
+        <link rel="stylesheet" href="../css/acting.css">
+    </head>
+    <body>
+        <!-- Page content -->
+        <div class="container">
+            <h1> Acting Career </h1>
+            <p> In addition to being a musical super star, Taylor Swift has dipped her toes into the film world. Below are the films in which she made an appearance, as well as her role:</p>
+            <div class="flex-container">
+            <div class="movie_poster" id="val">
+                <h3>Valentine's Day (2010)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Valentines_day_poster_10.jpg"
+                     alt="Valentines Day" 
+                     width="260"
+                     height="385"/>
+                <div class="text_section" id="val_info"><p> In the 2010 romantic comedy, Valentine's Day, Taylor Swift plays the role of Felicia Miller, a highschool athlete freshly in love with her teammate, Willy Harrington, played by Taylor Lautner. </p></div>
+            </div>
+            <div class="movie_poster" id="lor">
+                <h3>The Lorax (2012)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b5/Lorax_teaser_poster.jpg"
+                     alt="The Lorax"
+                     width="260"
+                     height="385" />
+                <div class="text_section" id="lor_info"><p> In The Lorax, a 2012 animated film based on the childrens book of the same name, Taylor Swift plays Audrey, the primary love interest of the protagonist, Ted Wiggins, played by Zac Efron. </p></div>
+            </div>
+            <div class="movie_poster" id="giv">
+                <h3>The Giver (2014)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/02/The_Giver_poster.jpg"
+                     alt="The Giver" 
+                     width="260"
+                     height="385" />
+                <div class="text_section" id="giv_info"><p> In the 2014 dystopian drama, The Giver, Taylor Swift plays the character Rosemary, who after becoming Receiver of Memory is so distraught at what she finds she asks to be "released". </p></div>
+            </div>
+            <div class="movie_poster" id="cat">
+                <h3>Cats (2019)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Cats_2019_poster.jpg"
+                     alt="Cats" 
+                     width="260"
+                     height="385" />
+                <div class="text_section" id="cat_info"><p> 2019's film adaptation of popular musical Cat's included Taylor as the femme fatale charcter, Bombalurina. She assists the main antagonist by performing a song to distract everyone while spreading catnip to incapacitate them. </p></div>
+            </div>
+            <div class="movie_poster" id="ams">
+                <h3>Amsterdam (2022)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Amsterdam_%282022_film%29.jpg"
+                     alt="Amsterdam" 
+                     width="260"
+                     height="385" />
+                <div class="text_section" id="ams_info"><p> Amsterdam, released in 2022, is the most recent film in which Taylor Swift appreared. In this myster comedy triller, she plays Elizabeth Meekins, a woman whose murder at the hands of a hitman is framed on the protagonists. </p></div>
+            </div>
+            </div>
+        </div>
+        <script src="../scripts/script.js"></script>
+        <script type=text/javascript>
+            $(function() {
+                $(".text_section").hide();
+    
+                $("#val").on("mouseenter", function (){
+                    $("#val_info").stop().slideDown(500);
+                });
+    
+                $("#val").on("mouseleave", function (){
+                    $("#val_info").stop().slideUp(500);
+                });
+    
+    
+                $("#lor").on("mouseenter", function (){
+                    $("#lor_info").stop().slideDown(500);
+                });
+    
+                $("#lor").on("mouseleave", function (){
+                    $("#lor_info").stop().slideUp(500);
+                });
+    
+    
+                $("#giv").on("mouseenter", function (){
+                    $("#giv_info").stop().slideDown(500);
+                });
+    
+                $("#giv").on("mouseleave", function (){
+                    $("#giv_info").stop().slideUp(500);
+                });
+    
+    
+                $("#cat").on("mouseenter", function (){
+                    $("#cat_info").stop().slideDown(500);
+                });
+    
+                $("#cat").on("mouseleave", function (){
+                    $("#cat_info").stop().slideUp(500);
+                });
+    
+    
+                $("#ams").on("mouseenter", function (){
+                    $("#ams_info").stop().slideDown(500);
+                });
+    
+                $("#ams").on("mouseleave", function (){
+                    $("#ams_info").stop().slideUp(500);
+                });
+            });
+        </script>
+    </body>

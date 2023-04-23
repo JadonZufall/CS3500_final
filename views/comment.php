@@ -1,4 +1,5 @@
 <?php
+include('inc/authpanel.php');
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     require('inc/header.inc');
     require('forms/comment_get.php');

@@ -1,3 +1,7 @@
+<?php
+include("inc/dbconn.php");
+global $conn;
+?>
 <style>
     .comment {
         margin-top: 10px;
@@ -13,15 +17,19 @@
     }
 </style>
 <div class="container">
-    Leave a comment:<br>
-    <form action="forms/comment_post.php" method="post">
-        <input type="text" name="data"><br>
-        <input type="submit">
-    </form>
     <?php
-        include("inc/dbconn.php");
-        global $conn;
-        session_start();
+    if ($_SESSION['loggedin']) {
+        echo 'Leave a comment:<br>';
+        echo '<form action="forms/comment_post.php" method="post">';
+        echo '<input type="text" name="data"><br>';
+        echo '<input type="submit">';
+        echo '</form>';
+    }
+    else {
+        echo "<a href='/login'>Login</a> to leave a comment";
+    }
+    ?>
+    <?php
         $sql = "SELECT * FROM comments ORDER BY postDate DESC";
         if ($result = $conn->query($sql)) {
             while ($row = $result->fetch_assoc()) {

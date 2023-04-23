@@ -86,3 +86,6 @@ Cassidy, Norkett [Apr 19 2023]:
 
 Jadon, Zufall [Apr 19 2023]:
 	Added proper database things
+
+Jadon, Zufall [Apr 20 2023]:
+	Updated database and such

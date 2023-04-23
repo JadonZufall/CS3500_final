@@ -1,5 +1,6 @@
 <body>
 <?php
+session_start();
 if ($_SESSION['loggedin']) {
     echo "Error you are already logged in!";
     die("Error user already logged in!");

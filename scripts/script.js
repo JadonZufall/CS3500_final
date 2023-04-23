@@ -138,6 +138,26 @@ const websitePages = {
         "verbose": "Signup",
         "link": "signup",
         "catagory": "Account"
+    },
+     "taylorsversion": {
+        "verbose": "Taylor's Version",
+        "link": "taylorsversion",
+        "catagory": "Music"
+    },
+     "genreswitch": {
+        "verbose": "Genre Switch",
+        "link": "genreswitch",
+        "catagory": "Other"
+    },
+     "hardships": {
+        "verbose": "Hardships",
+        "link": "hardships",
+        "catagory": "Other"
+    },
+     "activism": {
+        "verbose": "Activism",
+        "link": "activism",
+        "catagory": "Other"
     }
 }
 

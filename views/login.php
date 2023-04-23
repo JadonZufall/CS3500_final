@@ -1,4 +1,8 @@
 <?php
+if ($_SESSION['loggedin']) {
+    echo "Error, you are already logged in!";
+    die("Error user already logged in");
+}
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     require('inc/header.inc');
     require('forms/login_get.php');

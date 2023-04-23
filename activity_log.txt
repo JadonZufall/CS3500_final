@@ -125,3 +125,6 @@ Jadon, Zufall [Apr 23 2023]:
 
 Jadon, Zufall [Apr 23 2023]:
 	Hashing for user authentication
+	
+Cassidy, Norkett [Apr 23 2023]:
+	Added a php form to taylorsversion.html

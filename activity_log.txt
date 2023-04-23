@@ -152,3 +152,6 @@ Hunter, Hamrick [Apr 23 2023]:
 
 Hunter, Hamrick [Apr 23 2023]:
 	Updated about.html to include new websites
+	
+Cassidy, Norkett [Apr 23 2023]:
+	Made some quick image resizing changes in hardships.html

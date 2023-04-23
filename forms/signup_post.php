@@ -9,31 +9,29 @@ $password = _POST["pass"];
 if (!isset($_POST["user"], $_POST["pass"])) {
     exit("Please fill out both username and password fields");
 }
-if (strlen($username) > 32) {
-    echo "Error invalid form submission signup.php POST";
-    die("Invalid form submission signup.php POST");
-}
 
-if (strlen($password) < 6) {
-    echo "Error invalid form submission signup.php POST";
-    die("Invalid form submission signup.php POST");
+// Validate string lengths
+if (strlen($username) > 32) {
+    exit("Invalid username length > 32 characters");
 }
-if (strlen($password) > 32) {
-    echo "Error invalid form submission signup.php POST";
-    die("Invalid form submission signup.php POST");
+else if (strlen($password) < 6) {
+    exit("Invalid password length < 6 characters");
+}
+else if (strlen($password) > 32) {
+    exit("Invalid password length > 32 characters");
 }
 
 // Check if username is taken
 $stmt = $conn->prepare("SELECT * FROM users WHERE username=?");
 $stmt->bind_param("s", $username);
-$result = $stmt->execute();
-if ($result->num_rows > 0) {
-   // Username is already taken. 
-    echo "username has already been taken.";
-    die("Username has already been taken.");
+$stmt->execute();
+$stmt->bind_result($result);
+if ($stmt->num_rows > 0) {
+    exit("Username has already been taken");
 }
+$stmt->close();
 
-// Salt and hash password.
+// Generate a salt I probably never actually use because lazy and writing code fast.
 $salt = random_bytes(64);
 $hash = password_hash($password, PASSWORD_DEFAULT);
 $stmt = $conn->prepare("INSERT INTO users (username, salt, hash) VALUES (?, ?, ?)");
@@ -47,3 +45,4 @@ if ($result === FALSE) {
 else {
     echo "Account successfully created.";
 }
+$stmt->close();

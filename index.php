@@ -56,6 +56,18 @@ else if ($uri == '/hardships') {
 else if ($uri == '/genreswitch') {
     require('views/genreswitch.php');
 }
+else if ($uri == '/listen') {
+    require('views/listen.php');
+}
+else if ($uri == '/acting') {
+    require('views/acting.php');
+}
+else if ($uri == '/previoustours') {
+    require('views/previoustours.php');
+}
+else if ($uri == '/quiz') {
+    require('views/quiz.php');
+}
 else {
     http_response_code(404);
     echo "404 Page not found";

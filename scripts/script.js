@@ -56,22 +56,22 @@ const websitePages = {
     },
     "early_life": {
         "verbose": "Early Life",
-        "link": "pages/early_life.html",
+        "link": "early_life",
         "catagory": "Timeline"
     },
     "career_beginnings": {
         "verbose": "Career Beginnings",
-        "link": "pages/career_beginnings.html",
+        "link": "career_beginnings",
         "catagory": "Timeline"
     },
     "1989": {
         "verbose": "1989",
-        "link": "pages/1989.html",
+        "link": "1989",
         "catagory": "Timeline"
     },
     "present_day": {
         "verbose": "Present Day",
-        "link": "pages/present_day.html",
+        "link": "present_day",
         "catagory": "Timeline"
     },
     "philanthropy": {

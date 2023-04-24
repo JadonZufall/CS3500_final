@@ -167,3 +167,14 @@ Malachi, Anichka [Apr 23 2023]:
 	
 Cassidy, Norkett [Apr 23 2023]:
 	Added individual pages to script.js
+
+Jadon, Zufall [Apr 23 2023]:
+	Corrected mismanaged urls
+
+Jadon, Zufall [Apr 23 2023]:
+	adapted php to work correctly with web server, had some problems with the webserver
+	properly routing urls
+
+Jadon, Zufall [Apr 23 2023]:
+	adapted php in order to work with the version that webhost provides as somethings seemed
+	to not work correctly.

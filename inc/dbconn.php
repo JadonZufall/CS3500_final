@@ -8,7 +8,7 @@
 // Database config
 $servername = 'localhost';
 $username = "server";
-$password = "password";
+$password = "z/_&]|0se7@d)&oA";
 $dbname = "taylor_swift";
 
 // Create connection

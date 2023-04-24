@@ -54,6 +54,26 @@ const websitePages = {
         "link": "awards",
         "catagory": "Music"
     },
+    "early_life": {
+        "verbose": "Early Life",
+        "link": "pages/early_life.html",
+        "catagory": "Timeline"
+    },
+    "career_beginnings": {
+        "verbose": "Career Beginnings",
+        "link": "pages/career_beginnings.html",
+        "catagory": "Timeline"
+    },
+    "1989": {
+        "verbose": "1989",
+        "link": "pages/1989.html",
+        "catagory": "Timeline"
+    },
+    "present_day": {
+        "verbose": "Present Day",
+        "link": "pages/present_day.html",
+        "catagory": "Timeline"
+    },
     "philanthropy": {
         "verbose": "Philanthropy",
         "link": "philanthropy",
@@ -118,6 +138,26 @@ const websitePages = {
         "verbose": "Signup",
         "link": "signup",
         "catagory": "Account"
+    },
+     "taylorsversion": {
+        "verbose": "Taylor's Version",
+        "link": "taylorsversion",
+        "catagory": "Music"
+    },
+     "genreswitch": {
+        "verbose": "Genre Switch",
+        "link": "genreswitch",
+        "catagory": "Other"
+    },
+     "hardships": {
+        "verbose": "Hardships",
+        "link": "hardships",
+        "catagory": "Other"
+    },
+     "activism": {
+        "verbose": "Activism",
+        "link": "activism",
+        "catagory": "Other"
     }
 }
 

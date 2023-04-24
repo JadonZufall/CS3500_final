@@ -155,3 +155,15 @@ Hunter, Hamrick [Apr 23 2023]:
 	
 Cassidy, Norkett [Apr 23 2023]:
 	Made some quick image resizing changes in hardships.html
+	
+TaVaughn, Walker [Apr 23 2023]:
+	Updated scripts to show additional pages
+
+Hunter, Hamrick [Apr 23 2023]:
+	Updated catalog.html to inlude new pages
+
+Malachi, Anichka [Apr 23 2023]:
+	Fixed tour dates link in index
+	
+Cassidy, Norkett [Apr 23 2023]:
+	Added individual pages to script.js
